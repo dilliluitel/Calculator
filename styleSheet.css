@@ -28,6 +28,11 @@
     .item14 {
       grid-column: 2 / span 2;
     }
+    /*on hover change font color & background color except on item0 */
+    [class*="item"]:hover:not(.item0) {  
+        color: red;
+        background-color: #ffffff;
+      }  
      input {
       text-align: right;
       height: 40px;
