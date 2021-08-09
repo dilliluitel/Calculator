@@ -1,0 +1,34 @@
+.grid-container {
+  display: grid;
+  grid-template-columns: 100px 100px 100px;
+  grid-gap: 1px;
+  background-color: orange;
+  padding: 10px;
+  height: 500px;
+  width: 300px;
+  position: relative;
+  top: 20px;
+  left: 500px;
+}
+  .grid-container > div {
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+    cursor: pointer;
+  }
+    [class*="item"]:hover:not(.item0) {  /*exception on class item0 */
+      color: red;
+      background-color: skyblue;
+    }
+    .item0 {
+      grid-column: 1 / span 3;
+      text-align: right;
+    }
+    .item14 {
+      grid-column: 2 / span 2;
+    }
+     input {
+      text-align: right;
+      height: 30px;
+    }
