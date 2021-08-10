@@ -1,25 +1,30 @@
+/* css style sheet for calculator layout */
+
 .grid-container {
   display: grid;
   grid-template-columns: 100px 100px 100px;
   grid-gap: 5px;
-  background-color: orange;
-  padding: 10px;
-  height: 500px;
-  width: 310px;
-  position: relative;
-  top: 20px;
-  left: 500px;
   border-radius: 15px;
+  padding: 10px;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  resize: both;
+  overflow: auto;
+  background-color: orange;
 }
   .grid-container > div {
-    background-color: rgba(255, 255, 255, 0.8);
     text-align: center;
-    border-radius: 10px;
-    box-shadow: 0 0 5px 5px rgba(57, 57, 78, 0.308);
-    padding: 20px 0;
     font-size: 30px;
     font-weight: bold;
     cursor: pointer;
+    border-radius: 10px;
+    padding: 20px 0;    
+    background-color: rgba(255, 255, 255, 0.8);
+    box-shadow: 0 0 5px 5px rgba(57, 57, 78, 0.308);
   }
     .item0 {
       grid-column: 1 / span 3;
@@ -37,4 +42,5 @@
       text-align: right;
       height: 40px;
       font-size: 30px;
+      background-color: skyblue;
     }
