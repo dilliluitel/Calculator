@@ -20,7 +20,6 @@
     text-align: center;
     font-size: 30px;
     font-weight: bold;
-    cursor: pointer;
     border-radius: 10px;
     padding: 20px 0;    
     background-color: rgba(255, 255, 255, 0.8);
@@ -33,14 +32,15 @@
     .item14 {
       grid-column: 2 / span 2;
     }
-    /*on hover change font color & background color except on item0 */
+    /*on hover change font color, cursor & background color except on item0 */
     [class*="item"]:hover:not(.item0) {  
         color: red;
         background-color: #ffffff;
+        cursor: pointer;
       }  
      input {
-      text-align: right;
       height: 40px;
       font-size: 30px;
+      text-align: right;
       background-color: skyblue;
     }
