@@ -16,31 +16,33 @@
   overflow: auto;
   background-color: orange;
 }
-  .grid-container > div {
-    text-align: center;
-    font-size: 30px;
-    font-weight: bold;
-    border-radius: 10px;
-    padding: 20px 0;    
-    background-color: rgba(255, 255, 255, 0.8);
-    box-shadow: 0 0 5px 5px rgba(57, 57, 78, 0.308);
-  }
-    .item0 {
-      grid-column: 1 / span 3;
-      text-align: right;
-    }
-    .item14 {
-      grid-column: 2 / span 2;
-    }
-    /*on hover change font color, cursor & background color except on item0 */
-    [class*="item"]:hover:not(.item0) {  
-        color: red;
-        background-color: #ffffff;
-        cursor: pointer;
-      }  
-     input {
-      height: 40px;
-      font-size: 30px;
-      text-align: right;
-      background-color: skyblue;
-    }
+.grid-container > div {
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+  border-radius: 10px;
+  padding: 20px 0;
+  background-color: rgba(255, 255, 255, 0.8);
+  box-shadow: 0 0 5px 5px rgba(57, 57, 78, 0.308);
+}
+.item0 {
+  grid-column: 1 / span 3;
+  text-align: right;
+}
+
+.item16 {
+  grid-column: 1 / span 3;
+}
+
+/*on hover change font color, cursor & background color except on item0 */
+[class*="item"]:hover:not(.item0) {
+  color: red;
+  background-color: #ffffff;
+  cursor: pointer;
+}
+input {
+  height: 40px;
+  font-size: 30px;
+  text-align: right;
+  background-color: skyblue;
+}

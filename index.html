@@ -2,28 +2,50 @@
 
 <!DOCTYPE html>
 <html lang="en-us">
-<head>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Calculator Layout</title>
-  <link rel="stylesheet" type="text/css" href="styleSheet.css">
-</head>
-<body>
-<div class="grid-container">
-  <div class="item0"><input type="text" id="fname" name="fname" size="15" value="0"></div>
-  <div class="item1">1</div>
-  <div class="item2">2</div>
-  <div class="item3">3</div>  
-  <div class="item4">4</div>
-  <div class="item5">5</div>
-  <div class="item6">6</div>
-  <div class="item7">7</div>
-  <div class="item8">8</div>
-  <div class="item9">9</div>  
-  <div class="item10">x</div>
-  <div class="item11">/</div>
-  <div class="item12">+</div>
-  <div class="item13">-</div>
-  <div class="item14">=</div>
-</div>
-</body>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator Layout</title>
+    <link rel="stylesheet" type="text/css" href="styleSheet.css" />
+  </head>
+  <body>
+    <h2>Practice Calulator Building</h2>
+    <p>Practing calculator building using <em>JavaScript</em></p>
+    <a href="https://github.com/dilliluitel?tab=repositories"
+      >GitHub Link to this project</a
+    >
+    <h4>Calculator Functions</h4>
+    <div>
+      <ul>
+        <li>Add</li>
+        <li>Subtract</li>
+        <li>Multiply</li>
+        <li>Divide</li>
+        <li>Clear</li>
+      </ul>
+    </div>
+
+    <!--<h1>Total: <span id="total">0</span></h1> -->
+    <div class="grid-container">
+      <div class="item0">
+        <input type="text" id="fname" name="fname" size="15" value="0" />
+      </div>
+      <div class="item1 digit">1</div>
+      <div class="item2 digit">2</div>
+      <div class="item3 digit">3</div>
+      <div class="item4 digit">4</div>
+      <div class="item5 digit">5</div>
+      <div class="item6 digit">6</div>
+      <div class="item7 digit">7</div>
+      <div class="item8 digit">8</div>
+      <div class="item9 digit">9</div>
+      <div class="item10 sign">+</div>
+      <div class="item11 sign">-</div>
+      <div class="item12 digit">0</div>
+      <div class="item13 sign">x</div>
+      <div class="item14 sign">/</div>
+      <div id="equal" class="item15">=</div>
+      <div id="clear" class="item16">Clear</div>
+    </div>
+  </body>
+  <script src="scripts.js" defer></script>
 </html>
